@@ -1,0 +1,92 @@
+---
+title: 購買伺服器
+description: 下單到開通，只要幾分鐘！
+icon: ShoppingCart
+---
+
+現在我們來買伺服器，請先到[官方商店](https://store.coffeehost.net/store)
+
+import { Step, Steps } from "fumadocs-ui/components/steps";
+import { Tab, Tabs } from "fumadocs-ui/components/tabs";
+import { Callout } from "fumadocs-ui/components/callout";
+
+<Steps>
+	<Step>
+  
+		### 選擇方案
+    
+    首先，先選擇一個適合您的方案，接著點選「立即購買」。
+
+    舉例來說，我想要購買 TW-S-4 的方案。
+    </Step>
+    <Step>
+
+    ### 設定伺服器
+
+    接著會跳轉到這個頁面，您可以選擇出帳類型以及附加選項。
+
+| 選項       | 介紹                                       |
+| ---------- | ------------------------------------------ |
+| 出帳循環   | 選擇季繳、半年繳，可享折扣                 |
+| 伺服器類型 | 選擇您要的伺服器類型                       |
+| 端口       | 小地圖或一些插件會需要用到                 |
+| 資料庫     | 某些插件可能會把資料儲存在 MySQL 資料庫    |
+| 備份       | 強烈建議大家都要購買，資料回檔的時候很方便 |
+
+![](/images/order/settings.png)
+
+    選擇好之後點「繼續」。
+
+    </Step>
+    <Step>
+
+    ### 結帳
+
+    登入 / 註冊一個帳號，選擇您想要的付款方式，並點選同意服務條款。
+
+<Tabs items={["PayPal", "Stripe", "銀行轉帳", "超商代碼", "超商條碼", "其他"]}>
+	<Tab value="PayPal">
+		您可使用 PayPal 餘額或信用卡付款。如使用信用卡，建議使用 Stripe
+		付款，手續費較低。
+	</Tab>
+	<Tab value="Stripe">
+		您可使用信用卡付款，手續費較 PayPal 低。
+		<Callout title="注意" type="warn">
+			若使用此付款方式，由於設計問題，直接刷卡會自動退款。因此我們建議先點選
+			8591，跳轉到帳單後將付款方式切回 Stripe 再付款。
+		</Callout>
+	</Tab>
+	<Tab value="銀行轉帳">您可使用 ATM / 網銀轉帳。</Tab>
+	<Tab value="超商代碼">您可至超商繳費。</Tab>
+	<Tab value="超商條碼">
+		手續費比超商代碼低 10 元。
+		<Callout title="注意" type="warn">
+			需等待 3~4 天銷帳，如果可以，建議使用超商代碼。
+		</Callout>
+	</Tab>
+	<Tab value="其他">
+		其他付款方式請到我們的 [Discord](https://dc.coffeehost.net)
+	</Tab>
+</Tabs>
+
+![](/images/order/checkout.png)
+
+    選擇好之後點「結帳」。
+
+    </Step>
+    <Step>
+
+    ### 付款
+
+    照上面的指示付款就可以了！
+
+    </Step>
+    <Step>
+
+    ### 大功告成
+
+    有些付款方式需要等待幾分鐘，等到開通時，就會發送一封電子郵件提醒您！
+
+    </Step>
+
+</Steps>
