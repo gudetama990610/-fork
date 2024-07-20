@@ -1,0 +1,8 @@
+{
+  "title": "服務",
+  "icon": "Server",
+  "pages": [
+    "upgrade",
+    "cancel"
+  ]
+}

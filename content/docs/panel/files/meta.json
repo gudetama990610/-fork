@@ -1,0 +1,10 @@
+{
+  "title": "檔案管理",
+  "icon": "File",
+  "pages": [
+    "upload",
+    "edit",
+    "backup",
+    "sftp"
+  ]
+}
