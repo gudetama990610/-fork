@@ -10,8 +10,13 @@ export const baseOptions: HomeLayoutProps = {
 	},
 	links: [
 		{
-			text: "Documentation",
+			text: "文檔",
 			url: "/docs",
+			active: "nested-url",
+		},
+		{
+			text: "Discord",
+			url: "https://dc.coffeehost.net",
 			active: "nested-url",
 		},
 	],
